@@ -7,6 +7,7 @@ class Cliente:
     def nome(self):
         print("chamando @property nome()")
         return self.__nome.title()
+        # A diferença é que o title alterará para maiúscula o primeiro caractere de cada palavra na string, enquanto o capitalize será somente o primeiro caractere da string.
 
     #definindo o setter
     @nome.setter

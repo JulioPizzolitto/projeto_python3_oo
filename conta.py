@@ -13,6 +13,7 @@ class Conta:
     def deposita(self, valor):
         self.__saldo += valor
 
+    # usando 2 '_' no inicio do nome do metodo deixa-o privado
     def __pode_sacar(self, valor_a_sacar):
         valor_disponivel = self.__saldo + self.__limite
         return valor_a_sacar <= valor_disponivel
